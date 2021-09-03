@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <title>Nicholas Coyles</title>
+        <link rel="icon" href="assets/img/logo.png">
+    </head>
+    <body>
+    <div class="container">
+     <section class="one" id="home">
+
+
+            <header class="l-header">
+                <nav class="nav bd-grid">
+                    <div>
+                        <a href="#" class="nav__logo">Nicholas Coyles</a>
+                    </div>
+
+                    <div class="nav__menu" id="nav-menu">
+                        <div class="nav__close">
+                            <ion-icon name="close-outline" class="nav__close-icon" id="nav-close"></ion-icon>
+                        </div>
+                        <ul class="nav__list">
+                            <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                            <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                            <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                            <li class="nav__item"><a href="#portfolio" class="nav__link">My Work</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+                    </div>
+                </nav>
+            </header>
+
+            <main class="l-main bd-grid">
+                <div class="home">
+                    <h1 class="home__title">Hi I'm<br>Nicholas<br>Web <br></h1>
+                    <h1 class="developer__text"><span class="text__effect" data-text="Developer">Developer </span><br> <span class="wave">👋</span></h1>
+
+
+                    <div class="home__img">
+                    </div>
+
+                    <div class="home__social">
+                        <a href="https://github.com/nicholascoyles" class="home__social-link"> <img src="assets/img/git.png" alt=""> </a>
+                        <a href="https://www.instagram.com/nicholascoyles_/" class="home__social-link"> <img src="assets/img/insta.png" alt=""> </a>
+                        <a href="https://twitter.com/NicholasCoyles" class="home__social-link"> <img src="assets/img/twitter.png" alt=""> </a>
+                    </div>
+
+                    <a href="#" class="home__button">Contact<ion-icon name="arrow-forward-outline" class="home__button-icon"></ion-icon></a>
+
+                </div>
+            </main>
+
+
+
+            <!-- MAIN -->
+            <script src="assets/js/main.js"></script>
+
+            <!-- GSAP -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+
+            <!-- THREE JS -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/108/three.min.js"
+            integrity="sha256-3mBEX8I0uMLF7+AUjJeTCelosuorzYpqwBMBPDTyQqY=" crossorigin="anonymous"></script>
+
+            <!-- HOVER-EFFECT JS -->
+            <script src="assets/js/hover-effect.umd.js"></script>
+            
+            <!-- ICONOS -->
+            <script  type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+        
+            <!--JQuery-->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            <script>
+                new hoverEffect({
+                    parent: document.querySelector('.home__img'),
+                    intensity: 0.2,
+                    image1: 'assets/img/img3.jpg',
+                    image2: 'assets/img/img4.jpg',
+                    displacementImage: 'assets/img/diss.png',
+                    imagesRatio: 300 / 450
+                })
+
+                /* NAV, TITLE Y IMG y*/
+                gsap.from('.nav', {opacity: 0, duration: 1, delay:1, y: -30})
+                gsap.from('.home__title', {opacity: 0, duration: 1.2, delay:1.2, y: -30})
+                gsap.from('.developer__text', {opacity: 0, duration: 1.2, delay:1.2, y: -30})
+                gsap.from('.home__img', {opacity: 0, duration: 1.3, delay:1.3, y: -50})
+
+                /*SOCIAL, SUBTITLE Y BUTTON*/
+                gsap.from('.home__social', {opacity: 0, duration: 1, delay:1.5, y: 50})
+                gsap.from('.home__subtitle', {opacity: 0, duration: 1, delay: 1.8, y: 50})
+                gsap.from('.home__button', {opacity: 0, duration: 1, delay:2, y: 50})
+
+                
+            </script>
+
+
+    </section>
+
+    <section class="two" id="about">
+        <div class="about__container">
+            <div class="about__section">
+                <div class="about__title">
+                    <h1 class="about__me">About Me 😀</h1>
+                </div>
+                <div class="about__content">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum, maiores ea omnis at molestiae facere neque ullam doloribus modi odio rem cumque, vitae, blanditiis similique! Minus velit accusamus repellendus voluptas?</p>
+                    <div class="button">
+                        <a href="#">Download my CV📜</a>
+                    </div>
+                </div>
+            </div>
+            <div class="image__section">
+                <img src="assets/img/avatar.jpg" alt="" >
+            </div>
+        </div>
+    </section>
+
+    <section class="three" id="skills">
+
+
+        <div class="containers">
+
+            <div class="skills__title">
+                <h1 class="skills">My Skills </h1>
+            </div>
+
+        <div class="row">
+          <div class="card">
+            <div class="card-body">
+                <img src="assets/img/html.png" alt="">
+            </div>
+            <div class="card-header">
+                <h1>HTML</h1>
+              </div>
+          </div>
+          <div class="card">
+
+            <div class="card-body">
+                <img src="assets/img/css.png" alt="">
+            </div>
+            <div class="card-header">
+                <h1>CSS</h1>
+              </div>
+          </div>         
+           <div class="card">
+
+            <div class="card-body">
+                <img src="assets/img/javascript.png" alt="">
+            </div>
+            <div class="card-header">
+                <h1>JAVASCRIPT</h1>
+              </div>
+          </div>          
+          <div class="card">
+
+            <div class="card-body">
+                <img src="assets/img/jquery.png" alt="">
+            </div>
+            <div class="card-header">
+                <h1>JQUERY</h1>
+              </div>
+          </div>
+          <div class="card">
+
+            <div class="card-body">
+                <img src="assets/img/php.png" alt="">
+            </div>
+            <div class="card-header">
+                <h1>PHP</h1>
+              </div>
+          </div>
+          <div class="card">
+
+            <div class="card-body">
+                <img src="assets/img/react.png" alt="">
+            </div>
+            <div class="card-header">
+                <h1>REACT</h1>
+              </div>
+          </div>
+          <div class="card">
+ 
+            <div class="card-body">
+                <img src="assets/img/sql.png" alt="">
+            </div>
+            <div class="card-header">
+                <h1>SQL</h1>
+              </div>
+          </div>
+          <div class="card">
+
+            <div class="card-body">
+                <img src="assets/img/json.png" alt="">
+            </div>
+            <div class="card-header">
+                <h1>JSON</h1>
+              </div>
+          </div>
+          <div class="card">
+
+            <div class="card-body">
+                <img src="assets/img/api.png" alt="">
+            </div>
+            <div class="card-header">
+                <h1>REST Api</h1>
+              </div>
+          </div>
+      </div>
+
+      </div>
+
+
+    <section class="four" id="portfolio">
+        <div class="projects__container">
+  
+        </div>
+    </section>
+</div>
+
+    </body>
+</html>

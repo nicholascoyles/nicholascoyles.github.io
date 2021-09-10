@@ -38,8 +38,7 @@
 
             <main class="l-main bd-grid">
                 <div class="home">
-                    <h1 class="home__title">Hi I'm<br>Nicholas<br>Web <br></h1>
-                    <h1 class="developer__text"><span class="text__effect" data-text="Developer">Developer </span><br> <span class="wave">👋</span></h1>
+                    <h1 class="home__title">Hi I'm<br>Nicholas<br>Web <br> <span class="developer__text text__effect" data-text="Developer"> </span><br> <span class="wave">👋</span></h1>
 
 
                     <div class="home__img">
@@ -55,52 +54,6 @@
 
                 </div>
             </main>
-
-
-
-            <!-- MAIN -->
-            <script src="assets/js/main.js"></script>
-
-            <!-- GSAP -->
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
-
-            <!-- THREE JS -->
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/108/three.min.js"
-            integrity="sha256-3mBEX8I0uMLF7+AUjJeTCelosuorzYpqwBMBPDTyQqY=" crossorigin="anonymous"></script>
-
-            <!-- HOVER-EFFECT JS -->
-            <script src="assets/js/hover-effect.umd.js"></script>
-            
-            <!-- ICONOS -->
-            <script  type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
-        
-            <!--JQuery-->
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-            <script>
-                new hoverEffect({
-                    parent: document.querySelector('.home__img'),
-                    intensity: 0.2,
-                    image1: 'assets/img/img3.jpg',
-                    image2: 'assets/img/img4.jpg',
-                    displacementImage: 'assets/img/diss.png',
-                    imagesRatio: 300 / 450
-                })
-
-                /* NAV, TITLE Y IMG y*/
-                gsap.from('.nav', {opacity: 0, duration: 1, delay:1, y: -30})
-                gsap.from('.home__title', {opacity: 0, duration: 1.2, delay:1.2, y: -30})
-                gsap.from('.developer__text', {opacity: 0, duration: 1.2, delay:1.2, y: -30})
-                gsap.from('.home__img', {opacity: 0, duration: 1.3, delay:1.3, y: -50})
-
-                /*SOCIAL, SUBTITLE Y BUTTON*/
-                gsap.from('.home__social', {opacity: 0, duration: 1, delay:1.5, y: 50})
-                gsap.from('.home__subtitle', {opacity: 0, duration: 1, delay: 1.8, y: 50})
-                gsap.from('.home__button', {opacity: 0, duration: 1, delay:2, y: 50})
-
-                
-            </script>
-
-
     </section>
 
     <section class="two" id="about">
@@ -110,9 +63,11 @@
                     <h1 class="about__me">About Me 😀</h1>
                 </div>
                 <div class="about__content">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum, maiores ea omnis at molestiae facere neque ullam doloribus modi odio rem cumque, vitae, blanditiis similique! Minus velit accusamus repellendus voluptas?</p>
+                    <p>Hi, 
+                  
+                        I’m an enthusiastic web developer, passionate about software engineering. I take pride in creating responsive, imaginative, and clean websites. I’m eager to learn and I’m looking for an opportunity develop my skills to help me progress into a Web developer role.</p>
                     <div class="button">
-                        <a href="#">Download my CV📜</a>
+                        <a href="../Nicholas_CV.docx" download>Download my CV📜</a>
                     </div>
                 </div>
             </div>
@@ -123,106 +78,192 @@
     </section>
 
     <section class="three" id="skills">
-
-
-        <div class="containers">
-
+        <div class="skills__wrapper">
             <div class="skills__title">
-                <h1 class="skills">My Skills </h1>
+                <h1>My Skills</h1>
             </div>
-
-        <div class="row">
-          <div class="card">
-            <div class="card-body">
-                <img src="assets/img/html.png" alt="">
-            </div>
-            <div class="card-header">
-                <h1>HTML</h1>
-              </div>
-          </div>
-          <div class="card">
-
-            <div class="card-body">
-                <img src="assets/img/css.png" alt="">
-            </div>
-            <div class="card-header">
-                <h1>CSS</h1>
-              </div>
-          </div>         
-           <div class="card">
-
-            <div class="card-body">
-                <img src="assets/img/javascript.png" alt="">
-            </div>
-            <div class="card-header">
-                <h1>JAVASCRIPT</h1>
-              </div>
-          </div>          
-          <div class="card">
-
-            <div class="card-body">
-                <img src="assets/img/jquery.png" alt="">
-            </div>
-            <div class="card-header">
-                <h1>JQUERY</h1>
-              </div>
-          </div>
-          <div class="card">
-
-            <div class="card-body">
-                <img src="assets/img/php.png" alt="">
-            </div>
-            <div class="card-header">
-                <h1>PHP</h1>
-              </div>
-          </div>
-          <div class="card">
-
-            <div class="card-body">
-                <img src="assets/img/react.png" alt="">
-            </div>
-            <div class="card-header">
-                <h1>REACT</h1>
-              </div>
-          </div>
-          <div class="card">
- 
-            <div class="card-body">
-                <img src="assets/img/sql.png" alt="">
-            </div>
-            <div class="card-header">
-                <h1>SQL</h1>
-              </div>
-          </div>
-          <div class="card">
-
-            <div class="card-body">
-                <img src="assets/img/json.png" alt="">
-            </div>
-            <div class="card-header">
-                <h1>JSON</h1>
-              </div>
-          </div>
-          <div class="card">
-
-            <div class="card-body">
-                <img src="assets/img/api.png" alt="">
-            </div>
-            <div class="card-header">
-                <h1>REST Api</h1>
-              </div>
-          </div>
-      </div>
-
-      </div>
+            <div class="skills__content">
+                <img src="/assets/img/html.png" alt="">
+                <h2>HTML</h2>
+                <p>I have 3 years experience</p>
+            </div>    
+            <div class="skills__content">
+                <img src="/assets/img/css.png" alt="">
+                <h2>CSS</h2>
+                <p>I have 3 years experience</p>
+            </div> 
+            <div class="skills__content">
+                <img src="/assets/img/javascript.png" alt="">
+                <h2>javascript</h2>
+                <p>I have 3 years experience</p>
+            </div> 
+            <div class="skills__content">
+                <img src="/assets/img/jquery.png" alt="">
+                <h2>jquery</h2>
+                <p>I have 3 years experience</p>
+            </div> 
+            <div class="skills__content">
+                <img src="/assets/img/jquery.png" alt="">
+                <h2>jquery</h2>
+                <p>I have 3 years experience</p>
+            </div> 
+            <div class="skills__content">
+                <img src="/assets/img/jquery.png" alt="">
+                <h2>jquery</h2>
+                <p>I have 3 years experience</p>
+            </div> 
+            <div class="skills__content">
+                <img src="/assets/img/jquery.png" alt="">
+                <h2>jquery</h2>
+                <p>I have 3 years experience</p>
+            </div> 
+            <div class="skills__content">
+                <img src="/assets/img/jquery.png" alt="">
+                <h2>jquery</h2>
+                <p>I have 3 years experience</p>
+            </div> 
+        </div>
+    </section>
 
 
     <section class="four" id="portfolio">
-        <div class="projects__container">
-  
+        <div class="portfolio__container">
+            <div class="portfolio__header">
+                <h1>Portfolio</h1>
+            </div>
+
+            <div class="portfolio__body">
+                <div class="filter">
+                    <button class="filter-btn active" data-filter="*">All</button>
+                    <button class="filter-btn" data-filter=".html">HTML/CSS/JavaScript</button>
+                    <button class="filter-btn" data-filter=".react">React</button>
+                    <button class="filter-btn" data-filter=".backend">Backend</button>
+                    <button class="filter-btn" data-filter=".api">API</button>
+                    <button class="filter-btn" data-filter=".wordpress">Wordpress</button>
+                </div>
+
+                <div class="grid">
+                    <div class="grid__item html">
+                        <div class="gallery__image">
+                            <img src="./assets/img/Photography.PNG" alt="">
+                            <div class="img__overlay">
+                                    <div class="img__desc">
+                                        <h3>Responsive Photography Site</h3>
+                                        <h5>View demo</h5>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__item react">
+                        <div class="gallery__image">
+                            <img src="./assets/img/avatar.jpg" alt="">
+                            <div class="img__overlay">
+                                <div class="plus">
+                                    <div class="img__desc">
+                                        <h3>Portfolio page</h3>
+                                        <h5>View demo</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__item backend">
+                        <div class="gallery__image">
+                            <img src="./assets/img/avatar.jpg" alt="">
+                            <div class="img__overlay">
+                                <div class="plus">
+                                    <div class="img__desc">
+                                        <h3>Portfolio page</h3>
+                                        <h5>View demo</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__item api">
+                        <div class="gallery__image">
+                            <img src="./assets/img/apiproject.PNG" alt="">
+                            <div class="img__overlay">
+                                    <div class="img__desc">
+                                        <h3>APIs demonstration</h3>
+                                        <h5>View demo</h5>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__item wordpress">
+                        <div class="gallery__image">
+                            <img src="./assets/img/avatar.jpg" alt="">
+                            <div class="img__overlay">
+                                <div class="plus">
+                                    <div class="img__desc">
+                                        <h3>Portfolio page</h3>
+                                        <h5>View demo</h5>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="more__folio">
+                    <div class="Morebutton">
+                        <a href="#">More..</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 </div>
+</body>
 
-    </body>
+    <!-- MAIN -->
+
+
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+
+    <!-- THREE JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/108/three.min.js"
+    integrity="sha256-3mBEX8I0uMLF7+AUjJeTCelosuorzYpqwBMBPDTyQqY=" crossorigin="anonymous"></script>
+
+    <!-- HOVER-EFFECT JS -->
+    <script src="assets/js/hover-effect.umd.js"></script>
+    
+    <!-- ICONOS -->
+    <script  type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+
+    <!--JQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+
+    <script>
+        new hoverEffect({
+            parent: document.querySelector('.home__img'),
+            intensity: 0.2,
+            image1: 'assets/img/img3.jpg',
+            image2: 'assets/img/img4.jpg',
+            displacementImage: 'assets/img/diss.png',
+            imagesRatio: 300 / 450
+        })
+
+        /* NAV, TITLE Y IMG y*/
+        gsap.from('.nav', {opacity: 0, duration: 1, delay:1, y: -30})
+        gsap.from('.home__title', {opacity: 0, duration: 1.2, delay:1.2, y: -30})
+        gsap.from('.developer__text', {opacity: 0, duration: 1.2, delay:1.2, y: -30})
+        gsap.from('.home__img', {opacity: 0, duration: 1.3, delay:1.3, y: -50})
+
+        /*SOCIAL, SUBTITLE Y BUTTON*/
+        gsap.from('.home__social', {opacity: 0, duration: 1, delay:1.5, y: 50})
+        gsap.from('.home__subtitle', {opacity: 0, duration: 1, delay: 1.8, y: 50})
+        gsap.from('.home__button', {opacity: 0, duration: 1, delay:2, y: 50})
+
+        
+    </script>
+
 </html>
+

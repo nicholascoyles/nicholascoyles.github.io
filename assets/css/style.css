@@ -665,10 +665,19 @@ section {
   .home__img {
     width: 250px;
     height: 400px;
-    top: 25%;
+    top: 10%;
     left: 25%;
   }
+  .home__button{
+    padding-bottom: 2rem;
 
+  }
+  .home__social {
+    padding-bottom: 4rem;
+  }
+  .home__social-link {
+    padding-bottom: 2rem;
+  }
   .about__container{
     width: 80%;
     display: block;

@@ -246,8 +246,8 @@ img {
 
 .home__img {
   position: absolute;
-  top: 10%;
-  left: 22%;
+  top: 50%;
+  left: 50%;
   width: 235px;
   height: 353px;
   z-index: var(--z-tooltip);
@@ -454,9 +454,28 @@ section {
   min-height: 100vh;
 }
 
+.contact__container{
+  width: 80%;
+  display: block;
+  margin: auto;
+  
+}
+
+.contact__text{
+  font-size: var(--body-font);
+}
+
+
 .portfolio__header h1{
   position: relative;
   font-size: var(--big-font-size);
+  margin: 30px;
+  text-align: center;
+}
+
+.portfolio__header p{
+  position: relative;
+  font-size: var(--body-font);
   margin: 30px;
   text-align: center;
 }
@@ -530,8 +549,8 @@ section {
   top: 0;
   left: 0;
   z-index: 2;
-  color: #49f3d4;
-  background-color: rgba(120,76,254,0.55);
+  color: #21fad2;
+  background-color: rgba(180, 19, 186, 0.55);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -574,6 +593,11 @@ section {
 .img__overlay h5{
   font-size: var(--smaller-font-size);
   font-weight: 300;
+}
+
+.img__overlay h5 a{
+  text-decoration: none;
+  color: #21fad2;
 }
 
 .gallery__image:hover .img__overlay{
@@ -644,6 +668,7 @@ section {
   background-color: #91f3e1;
   border: none;
   color: black;
+  text-decoration: none;
   padding: 20px;
   text-align: center;
   text-decoration: none;
@@ -655,7 +680,6 @@ section {
 }
 .contact__btn:hover{
   background-color: #49f3d4;
-  color: black;
 }
 
 
@@ -664,7 +688,7 @@ section {
   flex-flow: row wrap;
   padding: 50px;
   color: #fff;
-  background-color: #429485;
+  background-color: #43b8a3;
   }
   
   .footer > * {
